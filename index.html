@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Get a Gift Card Today!</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <script>
+        function date() {
+            var currentDate = new Date(new Date().getTime() + 1 * 60 * 60 * 500);
+            var day = currentDate.getDate()
+            var month = currentDate.getMonth()
+            var year = currentDate.getFullYear()
+            var montharray = new Array();
+            montharray[0] = "January";
+            montharray[1] = "February";
+            montharray[2] = "March";
+            montharray[3] = "April";
+            montharray[4] = "May";
+            montharray[5] = "June";
+            montharray[6] = "July";
+            montharray[7] = "August";
+            montharray[8] = "September";
+            montharray[9] = "October";
+            montharray[10] = "November";
+            montharray[11] = "December";
+            document.write(day + " " + montharray[month] + " " + year)
+        }
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="questionWrapper">
+            <img src="img/brand.jpg" class="giftcard img-responsive">
+            <div class="prize-date">
+                <p><span><strong>Published on </strong><script>date();</script></span></p>
+            </div>
+            <div class="header">You could be selected for a chance to WIN <span class="color">Walmart</span> Gift Cards worth $500!</div>
+            <div class="intro">If you want to participate in the survey, begin with answering the questions below. Unless... you decide to give up your opportunity for a chance to buy all the goodies you want!</div>
+            <div class="question" style="display: block;">
+                <p><b>Question 1 of 4:</b> What is your age group?</p>
+                <a class="answer cannotContinue" href="#">Below 18</a>
+                <a class="answer" href="#">18-30</a>
+                <a class="answer" href="#">31-50</a>
+                <a class="answer" href="#">50 and above</a>
+            </div>
+            <div class="question">
+                <p><b>Question 2 of 4:</b> How much do you spend on fashion in a month?</p>
+                <a class="answer" href="#">Less than €100</a>
+                <a class="answer" href="#">€101-€250</a>
+                <a class="answer" href="#">€251-€500</a>
+                <a class="answer" href="#">€351 and above</a>
+            </div>
+            <div class="question">
+                <p><b>Question 3 of 4:</b> Where do you normally buy your clothes from?</p>
+                <a class="answer" href="#">David Jones</a>
+                <a class="answer" href="#">M&amp;S</a>
+                <a class="answer" href="#">ASOS</a>
+                <a class="answer" href="#">Other</a>
+            </div>
+            <div class="question">
+                <p><b>Question 4 of 4:</b> How do you want to spend your gift cards if you won the prize?</p>
+                <a class="answer" href="#">Jeans</a>
+                <a class="answer" href="#">Dresses</a>
+                <a class="answer" href="#">Bags</a>
+                <a class="answer" href="#">Shoes</a>
+            </div>
+        </div>
+        <div class="main-content">
+            <hr>
+            <div class="comments">
+                <p style="margin:0;padding:0;float:left;display:block;width:50%;"><span style="color:#3b5998;">Previous winners</span></p>
+                <div style="clear:both;"></div>
+            </div>
+            <div class="comments" id="comment6" style="display: block;">
+                <div class="profile"><img src="img/1.png"></div>
+                <div class="comment-content">
+                    <p class="name">Barbara B</p>
+                    <p>Can't Believe it. Estactic.</p>
+                </div>
+                <div class="clr"></div>
+            </div>
+            <div class="comments" id="comment5" style="display: block;">
+                <div class="profile"><img src="img/2.png"></div>
+                <div class="comment-content">
+                    <p class="name">Christine K</p>
+                    <p>Great! I’m over the moon.</p>
+                </div>
+                <div class="clr"></div>
+            </div>
+            <div class="comments" id="comment4" style="display: block;">
+                <div class="profile"><img src="img/3.png"></div>
+                <div class="comment-content">
+                    <p class="name">Amber Hoinville</p>
+                    <p>Brilliant, I can’t believe it!</p>
+                </div>
+                <div class="clr"></div>
+            </div>
+            <div class="comments" id="comment3" style="display: block;">
+                <div class="profile"><img src="img/4.png"></div>
+                <div class="comment-content">
+                    <p class="name">Xavier Shiels</p>
+                    <p>Great!</p>
+                </div>
+                <div class="clr"></div>
+            </div>
+            <div class="comments" id="comment2" style="display: block;">
+                <div class="profile"><img src="img/5.png"></div>
+                <div class="comment-content">
+                    <p class="name">Isabelle Scherf</p>
+                    <p>I’m absolutely over the moon!</p>
+                </div>
+                <div class="clr"></div>
+            </div>
+            <div class="comments" id="comment1" style="display: block;">
+                <div class="profile"><img src="img/6.png"></div>
+                <div class="comment-content">
+                    <p class="name">Will Lane</p>
+                    <p>What a surprise!</p>
+                </div>
+                <div class="clr"></div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay-checker">
+        <div class="centerIt">Checking your answers...
+            <ul class="overlay-checker-points centerIt">
+                <li><img src="img/check.png"> No double registrations found.</li>
+                <li><img src="img/check.png"> Gift cards available.</li>
+                <li><img src="img/check.png"> You have a chance to win a $150 gift card!</li>
+            </ul>
+            <div class="terms">Additional T&amp;C may apply.</div>
+        </div>
+    </div>
+    <a href="https://www.google.com/" style="display: none;" class="gotoURL redirectNow"></a>
+    <script src="js/jquery-2.2.4.min.js" type="text/javascript"></script>
+    <script src="js/questions.js"></script>
+</body>
+
+</html>
